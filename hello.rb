@@ -30,3 +30,39 @@ def plus_one(number)
   number+1
 end
 puts plus_one(4)
+
+#課題12
+number = 2
+if number == 3
+  puts "nは3です。"
+end
+
+number = 3
+if number == 3 || number == 4
+  puts "3、4のどちらかです"
+end
+
+number = 4
+if number == 3
+  puts "nは、3です"
+elsif number == 4
+  puts "nは、4です"
+end
+
+for num in 1..5 do
+  puts num
+end
+
+numbers = 1..5
+numbers.each do |number|
+  puts number
+end
+
+num = 1
+if num == 2
+  puts "2です"
+elsif num == 3
+  puts "3です"
+else
+  puts "それ以外です"
+end
