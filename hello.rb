@@ -31,6 +31,7 @@ def plus_one(number)
 end
 puts plus_one(4)
 
+
 #課題12
 number = 2
 if number == 3
@@ -66,3 +67,34 @@ elsif num == 3
 else
   puts "それ以外です"
 end
+
+#課題13
+  #-- attr_accessorメソッド定義
+class People
+  attr_accessor :name
+
+  
+   #-- インスタンスメソッド定義
+  def initialize
+    puts "Peopleメゾッドが作られました"
+  end
+  
+  #-- クラスメソッド定義
+  def self.greet
+    puts "私はPeopleクラスです"
+  end
+end
+
+
+@name = People.new
+people = People.new
+People.greet
+
+  #-- クラスの伝承
+class ChildPeople < People
+  def self.bow
+    puts "私は目からビームが出せます"
+  end
+end
+
+ChildPeople.bow
