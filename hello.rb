@@ -90,6 +90,7 @@ end
 people = People.new
 People.greet
 
+
   #-- クラスの伝承
 class ChildPeople < People
   def self.bow
